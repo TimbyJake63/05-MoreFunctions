@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -27,9 +27,25 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+import math
 
+def addition(x,y):
+    return (x+y)
+
+def subtraction(x,y):
+    return (x-y)
+
+def division(x,y):
+    return (x/y)
+
+def multiplication(x,y):
+    return (x*y)
+
+def copysign(x,y):
+    return math.copysign(x,y)
+    
 ###############################################################################
-# TODO: 2. (8 pts)
+# DONE: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -59,9 +75,20 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def Main():
+    username= input("enter username")
+    print(f"What's up {username}?! How've you been?!")
+    X= int(input("enter first number"))
+    Y= int(input("enter second number"))
+    print(addition(X,Y))
+    print(subtraction(X,Y))
+    print(division(X,Y))
+    print(multiplication(X,Y))
+    print(copysign(X,Y))
 
+Main()
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
+# DONE: 3. EXTRA CREDIT (4 pts)
 #
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this
